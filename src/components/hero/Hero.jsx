@@ -4,12 +4,13 @@ import './styles.sass'
 const Hero = () => {
   return (
     <article className='hero'>
-      <div>
+      <div className='hero_intro'>
         <h1>Atelier tour à tour -</h1>
         <h2>affûtage et remoulage</h2>
       </div>
       
-
+      <div className='hero_shader01'></div>
+      <div className='hero_shader02'></div>
       <section>
         <h3>Votre artisan :</h3>
         <p>
