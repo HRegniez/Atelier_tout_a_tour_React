@@ -1,49 +1,42 @@
 @import '../../variables'
 
 .hero
-    height: 100svh
+    height: 120svh
     width: 100svw
-    background-image: url('public/images/hero_bg2.jpg')
+    background-image: url('public/images/hero_bg.jpg')
     background-repeat: no-repeat
     background-size: cover
     position: relative
     z-index: -1
-    overflow: hidden
-    
-    &_shader01
+    h3
+        text-transform: uppercase
+        padding-botom: 2rem
+    &_background
         position: absolute
-        left: -85%
-        top: 6rem
-        width: 200%
-        height: 200%
-        background: rgb(205,186,136)
-        background: radial-gradient(circle, rgba(205, 186, 136, 0.8713592233) 17%, rgba(9, 9, 121, 0) 40%)
-    &_shader02
-        position: absolute
+        top: 0
         left: 0
-        top: 130px
         width: 100%
         height: 100%
-        background: rgb(205,186,136)
-        background: linear-gradient(0deg, rgba(205,186,136,1) 12%, rgba(34,193,195,0) 30%)
+        background: radial-gradient(circle, rgba(238,174,202,0) 0%, rgba(0,0,0,0.6860986547085202) 100%)
     &_intro
         position: absolute
         left: 5%
-        top: 50%
+        top: 30%
         padding: 1rem
         color: white
         z-index: 1
         font-weight: 700
         h1
-            font-size: 2rem
+            font-size: 3rem
             font-family: $font-02
+            text-transform: capitalize
         h2
             font-size: 1rem
             text-transform: uppercase
     section
         position: absolute
         left: 5%
-        top: 70%
+        top: 60%
         width: 30%
         color: white
         padding: 1rem
@@ -53,10 +46,9 @@
     aside
         position: absolute
         left: 65%
-        top: 75%
+        top: 65%
         width: 30%
         color: white
-        background-color: $color-prim-norm--0105
         padding: 1rem
         font-family: $font-02
         line-height: 1.3

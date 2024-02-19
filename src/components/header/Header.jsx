@@ -9,6 +9,7 @@ const Header = () => {
         <img src={logo} className='header_logo_img' alt="Atelier tour à tour logo" />
       </a>
       <ul className='header_nav'>
+        <li><a href="#main">Accueil</a></li>
         <li><a href="#OuMeTrouver">Ou me trouver</a></li>
         <li><a href="#Tarifs">Tarifs</a></li>
         <li><a href="#Gallerie">Gallerie</a></li>
