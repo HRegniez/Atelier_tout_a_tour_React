@@ -1,11 +1,12 @@
 import React from 'react'
 import "./styles.sass"
+import '../../svg.sass'
 
 const OuMeTrouver = () => {
   return (
     <section className='meTrouver'>
       <h2>Ou me trouver</h2>
-      <div className='meTrouver_contain'> 
+      <div className='meTrouver_contain wood'> 
         <article>
           <ul>
             <li>Marchée de saint médard en jalles</li>

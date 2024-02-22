@@ -1,0 +1,37 @@
+@import '../../variables'
+    
+.tarifs
+    background: rgb(171,163,155)
+    background: linear-gradient(0deg, rgba(171,163,155,1) 0%, rgba(214,204,194,1) 100%)
+    padding: 2rem
+    &_box
+        @include shade-in
+        
+    &_contain
+        background-color: $color-sec_dark_01
+        padding: 2rem
+        border-radius: 2rem
+        @include shade-out_2
+    &_list
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-evenly
+        gap: 1rem
+        article
+            width: 38svw
+            background-color: $color-sec_01
+            padding: 1rem
+            border-radius: 1rem
+            h3
+                font-size: 1.5rem
+                margin-bottom: 1rem
+            li
+                display: flex
+                justify-content: space-between
+                margin-bottom: 0.3rem
+                &:not(:last-child)
+                    border-bottom: 2px solid $color-sec_dark_01
+    aside
+        margin-top: 0.5rem
+            
+            
