@@ -8,7 +8,7 @@ const Tarifs = () => {
   console.log(tarifs)
   return (
     <section className='tarifs'>
-      <div className='tarifs_contain wood'>
+      <div className='tarifs_contain'>
         <h2>Tarifs </h2>
         <ul className='tarifs_list'>
           {

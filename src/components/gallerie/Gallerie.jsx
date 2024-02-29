@@ -3,23 +3,23 @@ import './styles.sass'
 import '../../svg.sass'
 
 const images = [
-  "src/assets/images/bijou_01.webp",
-  "src/assets/images/bijou_02.webp",
-  "src/assets/images/bijou_03.webp",
+  "src/assets/images/gallerie/bijou_01.webp",
+  "src/assets/images/gallerie/bijou_02.webp",
+  "src/assets/images/gallerie/bijou_03.webp",
 
-  "src/assets/images/cendrier_01.webp",
-  "src/assets/images/cendrier_02.webp",
-  "src/assets/images/cendrier_03.webp",
-  "src/assets/images/cendrier_04.webp",
-  "src/assets/images/cendrier_05.webp",
-  "src/assets/images/cendrier_06.webp",
-  "src/assets/images/cendrier_07.webp",
+  "src/assets/images/gallerie/cendrier_01.webp",
+  "src/assets/images/gallerie/cendrier_02.webp",
+  "src/assets/images/gallerie/cendrier_03.webp",
+  "src/assets/images/gallerie/cendrier_04.webp",
+  "src/assets/images/gallerie/cendrier_05.webp",
+  "src/assets/images/gallerie/cendrier_06.webp",
+  "src/assets/images/gallerie/cendrier_07.webp",
   
-  "src/assets/images/stylo_01.webp",
-  "src/assets/images/stylo_02.webp",
-  "src/assets/images/stylo_03.webp",
+  "src/assets/images/gallerie/stylo_01.webp",
+  "src/assets/images/gallerie/stylo_02.webp",
+  "src/assets/images/gallerie/stylo_03.webp",
 
-  "src/assets/images/toupie_01.webp"
+  "src/assets/images/gallerie/toupie_01.webp"
 ]
 
 
