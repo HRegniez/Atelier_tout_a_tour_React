@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './styles.sass'
-import backgroundImg from '../../../public/images/hero_bg.jpg'
+import backgroundImg from '/images/hero_bg.jpg'
 
 const Hero = () => {
   const [yPos, setYPos] = useState(0)

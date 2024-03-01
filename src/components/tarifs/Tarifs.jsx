@@ -2,7 +2,6 @@ import React from 'react'
 import tarifs from './tarifs.json'
 import Prices from '../prices/Prices'
 import './styles.sass'
-import '../../svg.sass'
 
 const Tarifs = () => {
   console.log(tarifs)

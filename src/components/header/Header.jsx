@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import logo from "../../../public/logo/TAT_web_01.svg"
+import logo from "/logo/TAT_web_01.svg"
 import "./styles.sass"
 
 const Header = () => {
