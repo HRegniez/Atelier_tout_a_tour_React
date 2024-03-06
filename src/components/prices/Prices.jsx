@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Prices = ({tarif}) => {
-    console.log(tarif.prices)
+    
   return (
     <article className='tarifs_box'>
         <h3>{tarif.id}</h3>

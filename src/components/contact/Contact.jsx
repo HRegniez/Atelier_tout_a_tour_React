@@ -11,7 +11,11 @@ const Contact = () => {
       <h3>Contact</h3>
       <ul>
         <li><FontAwesomeIcon icon={faPhone} /> 07 75 75 10 88</li>
-        <li><FontAwesomeIcon icon={faEnvelope} /> ateliertouratour@gmail.com</li>
+        <li>
+          <a href="mailto:ateliertouratour@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} /> ateliertouratour@gmail.com
+          </a>
+        </li>
         <li><FontAwesomeIcon icon={faFacebook} /></li>
       </ul>
     </section>

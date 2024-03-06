@@ -4,7 +4,7 @@ import Prices from '../prices/Prices'
 import './styles.sass'
 
 const Tarifs = () => {
-  console.log(tarifs)
+
   return (
     <section className='tarifs'>
       <div className='tarifs_contain'>

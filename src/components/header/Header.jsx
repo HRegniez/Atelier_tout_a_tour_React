@@ -1,13 +1,20 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, useRef} from 'react'
 import logo from "/logo/TAT_web_01.svg"
 import "./styles.sass"
 
 const Header = () => {
   const [yPos, setYPos] = useState(0)
+  const elementRef = useRef(null)
 
   useEffect(() => {
     const handleScroll = () => {
-      if(window.scrollY < 175) {
+      
+      if(elementRef.current.getBoundingClientRect().y > -170) {
+        setYPos(-window.scrollY)
+        if(elementRef.current.getBoundingClientRect().y < 170) {
+          setYPos(-175)
+      }
+      } if(window.scrollY < 175) {
         setYPos(-window.scrollY)
       } 
     }
@@ -22,9 +29,8 @@ const Header = () => {
   const headerStyle = {
     transform: `translateY(${yPos}px)`
   }
-  console.log(window.scrollY)
   return (
-    <nav className='header' style={headerStyle}>
+    <nav className='header' style={headerStyle} ref={elementRef}>
       <a href="#Home" className='header_logo'>
         <img src={logo} className='header_logo_img' alt="Atelier tour à tour logo" />
       </a>
