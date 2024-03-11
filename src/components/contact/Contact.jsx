@@ -2,21 +2,23 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
-
+import './styles.sass'
 
 
 const Contact = () => {
   return (
-    <section>
+    <section className='contact'>
       <h3>Contact</h3>
-      <ul>
-        <li><FontAwesomeIcon icon={faPhone} /> 07 75 75 10 88</li>
-        <li>
-          <a href="mailto:ateliertouratour@gmail.com">
-            <FontAwesomeIcon icon={faEnvelope} /> ateliertouratour@gmail.com
-          </a>
-        </li>
-        <li><FontAwesomeIcon icon={faFacebook} /></li>
+      <ul className='contact_contain'>
+        <div >
+          <li><FontAwesomeIcon className='contact_icon icon' icon={faPhone} /> 07 75 75 10 88</li>
+          <li>
+            <a href="mailto:ateliertouratour@gmail.com">
+              <FontAwesomeIcon className='contact_icon icon' icon={faEnvelope} /> ateliertouratour@gmail.com
+            </a>
+          </li>
+        </div>
+        <li><FontAwesomeIcon className='contact_fb icon' icon={faFacebook} /></li>
       </ul>
     </section>
   )

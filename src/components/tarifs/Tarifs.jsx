@@ -15,13 +15,13 @@ const Tarifs = () => {
             <Prices key={tarif.id} tarif={tarif}/>
           ))
         }
-        <li>Restauration / Polissage etc... <span>sur devis selon l'état</span></li>
+        <aside >
+          Restauration / Polissage etc... <span>sur devis selon l'état</span>
+          <p>Prix indicatif selon état / tarifs dégressifs selon quantité.<br/>
+        Pour tous autres types d’outil merci de me contacter.</p>
+        </aside>
         </ul>
       </div>
-      <aside>
-        Prix indicatif selon état / tarifs dégressifs selon quantité.
-        Pour tous autres types d’outil merci de me contacter.
-      </aside>
     </section>
   )
 }

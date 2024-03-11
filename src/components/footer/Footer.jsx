@@ -8,7 +8,9 @@ const Footer = () => {
     <section className='footer'>
       <article>
         <Contact />
-        <img src={logo} alt="TAT logo" />
+        <div className='footer_logo'>
+          <img src={logo} alt="TAT logo" />
+        </div>
         <aside>
           <p>this site was hand coded by HRegniez</p>
         </aside>
