@@ -8,6 +8,8 @@
     background-color: $color-prim_01
     position: fixed
     z-index: 5
+    .buger
+        display: none
     &_logo
         width: 10rem
         &_img
@@ -28,4 +30,27 @@
             font-size: 1rem
             font-family: $font-01
         
+@media screen and (max-width: 750px) 
+    .header
+        flex-direction: row
+        &_nav
+            display: none
+            
+        .burger
+            display: box
+            padding: 1rem
+            position: fixed
+            top: 3rem
+            right: 2rem
+            background-color: $color-prim_01
+            border-radius: 0.5rem
+            &_line
+                width: 2.7rem
+                height: 0.3rem
+                background-color: $color-sec_01
+                margin: 0.4rem 0 
+                border-radius: 0.2rem
+                
+                
+
             

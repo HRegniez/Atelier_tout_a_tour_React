@@ -6,7 +6,6 @@ import { faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
 import Contact from '../contact/Contact'
 
 const OuMeTrouver = () => {
-  console.log(agendaData)
   return (
     <section className='meTrouver'>
       <h2>Ou me trouver</h2>
@@ -38,12 +37,14 @@ const OuMeTrouver = () => {
         </article>
         <aside>
           <p>
-            Atelier tour à tour vous propose un service à domicile à partir de 40 euros dans les villes mitoyennes de saint Médard en Jalles. (Possibilité de se regrouper entre voisin)
+            Atelier tour à tour vous propose un service à domicile à partir de 40 euros dans les villes mitoyennes de saint Médard en Jalles.  (Possibilité de se regrouper entre voisin)
           </p>
           
         </aside>
       </div>
-      <Contact/>
+      <div className='meTrouver_contact'>
+        <Contact/>
+      </div>
     </section>
   )
 }

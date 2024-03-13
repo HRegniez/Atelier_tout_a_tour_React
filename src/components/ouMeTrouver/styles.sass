@@ -6,7 +6,6 @@
     flex-direction: column
     align-items: center
     width: 100svw
-
     &_contain
         display: flex
         width: 100%
@@ -39,3 +38,43 @@
         a
             color: $color-prim_01
             font-size: 1.2rem
+@media screen and (max-width: 951px)
+     .meTrouver
+        position: relative
+        padding-bottom: 2rem
+        &_contain
+            flex-direction: column
+            align-items: center
+            article
+                width: 70%
+            aside
+                width: 35%
+                margin-right: auto
+                margin-left: 4rem
+        &_contact
+            position: absolute
+            bottom: 0rem
+            right: 4rem
+@media screen and (max-width: 846px)
+     .meTrouver
+        &_contain
+            aside
+                width: 70%
+                margin: auto
+                margin-bottom: 2rem
+        &_contact
+            position: relative
+            right: 0
+            margin: auto
+@media screen and (max-width: 600px)
+    .meTrouver
+        &_contain
+            article
+                width: 100%
+                border-radius: 0 
+                ul
+                    margin-left: 0.5rem
+                    margin-right: 0.5rem
+        &_details
+            h3
+                text-align: end

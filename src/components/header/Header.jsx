@@ -29,11 +29,19 @@ const Header = () => {
   const headerStyle = {
     transform: `translateY(${yPos}px)`
   }
+  const burgerStyle = {
+    transform: `translateY(${-yPos}px)`
+  }
   return (
     <nav className='header' style={headerStyle} ref={elementRef}>
-      <a href="#Home" className='header_logo'>
+      <div className='header_logo'>
         <img src={logo} className='header_logo_img' alt="Atelier tour à tour logo" />
-      </a>
+      </div>
+      <div className='burger' style={burgerStyle}>
+        <div className='burger_line'></div>
+        <div className='burger_line'></div>
+        <div className='burger_line'></div>
+      </div>
       <ul className='header_nav'>
         <li><a href="#main">Accueil</a></li>
         <li><a href="#OuMeTrouver">Ou me trouver</a></li>
