@@ -28,7 +28,7 @@ const Gallerie = () => {
     <section className='gallerie'>
       <div className='gallerie_gradient'></div>
       
-      <h2>Gallerie</h2>
+      <h2>Galerie</h2>
       <div className="gallerie_contain">
         {
           images ?

@@ -37,7 +37,7 @@ const OuMeTrouver = () => {
         </article>
         <aside>
           <p>
-            Atelier tour à tour vous propose un service à domicile à partir de 40 euros dans les villes mitoyennes de saint Médard en Jalles.  (Possibilité de se regrouper entre voisin)
+            Atelier tour à tour vous propose un service à domicile à partir de 40 euros dans les villes mitoyennes de Saint-Médard-en-Jalles.  (Possibilité de se regrouper entre voisin)
           </p>
           
         </aside>

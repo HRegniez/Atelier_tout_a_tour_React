@@ -6,6 +6,9 @@
     padding: 2rem
     &_box
         @include shade-in
+        span
+            display: inline-block
+            min-width: 4.2rem
         
     &_contain
         background-color: $color-sec_dark_01
@@ -48,5 +51,29 @@
                     border-bottom: 2px solid $color-sec_dark_01
     aside
         margin-top: 0.5rem
-            
+
+@media screen and (max-width: 867px)
+.tarifs
+    &_list
+        article
+            width: 100%
+
+@media screen and (max-width: 642px)
+    .tarifs
+        padding: 0
+        &_contain
+            border-radius: 0
+            box-shadow: none
+
+@media screen and (max-width: 440px)
+    .tarifs
+        &_contain
+            padding: 1.5rem
+        &_box
+            span
+                min-width: 3rem
+        &_list
+            article
+                li
+                    font-size: 0.8rem
             

@@ -7,7 +7,7 @@ const Prices = ({tarif}) => {
         <h3>{tarif.id}</h3>
         {
             tarif.prices.map((item) =>
-            <li key={item.name}><h4>{item.name} </h4><span>{item.price} &#x20AC;</span></li>
+            <li key={item.name}><h4>{item.name} </h4><span>{item.price}</span></li>
             )
         }
     </article>
