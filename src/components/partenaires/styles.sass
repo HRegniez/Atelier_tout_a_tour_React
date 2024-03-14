@@ -24,6 +24,12 @@
             @include shade-out
             color: black
             text-decoration: none
+            transition: all 0.1s ease
+            &:hover
+                transform: scale(1.03)
+                transition: all 0.3s ease
+                @include shade-out_2
+                
         p
             font-size: 0.8rem
             margin-top: 1.5rem
