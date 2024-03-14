@@ -6,6 +6,9 @@ const Header = () => {
   const [yPos, setYPos] = useState(0)
   const elementRef = useRef(null)
 
+  const [toggleMenu, setToggleMenu] = useState(false)
+
+    // menu - hide on scroll fx
   useEffect(() => {
     const handleScroll = () => {
       
@@ -32,17 +35,23 @@ const Header = () => {
   const burgerStyle = {
     transform: `translateY(${-yPos}px)`
   }
+
+  // burger menu (mobile)
+  const handleMenuToggle = () => {
+    setToggleMenu(!toggleMenu)
+  }
+
   return (
     <nav className='header' style={headerStyle} ref={elementRef}>
       <div className='header_logo'>
         <img src={logo} className='header_logo_img' alt="Atelier tour à tour logo" />
       </div>
-      <div className='burger' style={burgerStyle}>
-        <div className='burger_line'></div>
-        <div className='burger_line'></div>
-        <div className='burger_line'></div>
+      <div className={`burger ${toggleMenu ? "active" : null}`} style={burgerStyle} onClick={handleMenuToggle}>
+        <div className='burger_line line_1'></div>
+        <div className='burger_line line_2'></div>
+        <div className='burger_line line_3'></div>
       </div>
-      <ul className='header_nav'>
+      <ul className={`header_nav ${toggleMenu ? "show" : null}`}>
         <li><a href="#main">Accueil</a></li>
         <li><a href="#OuMeTrouver">Ou me trouver</a></li>
         <li><a href="#Tarifs">Tarifs</a></li>

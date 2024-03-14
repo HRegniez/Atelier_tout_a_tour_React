@@ -18,21 +18,15 @@ const OuMeTrouver = () => {
                 <span>
                   {data.dates}
                 </span>
-                <div className='meTrouver_details' >
+                <a className='meTrouver_details' href={data.mapsLink} target='blank'>
                   <h3>
                     {data.adresse}
                   </h3>
-
-                  <a href={data.mapsLink} target='blank'><FontAwesomeIcon icon={faMapMarkerAlt} /></a>
-                </div>
+                  <FontAwesomeIcon icon={faMapMarkerAlt} />
+                </a>
               </li>
             ))
           }
-            {/* <li>Marchée de saint médard en jalles</li>
-            <li>Marchée des paysans</li>
-            <li>Rassemblement jillet jaune</li>
-            <li>Sur l'autoroute avant paris dans la blocade !</li>
-            <li>Devant la bastille !</li> */}
           </ul>
         </article>
         <aside>
