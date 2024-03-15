@@ -11,6 +11,7 @@ const OuMeTrouver = () => {
       <h2>Ou me trouver</h2>
       <div className='meTrouver_contain'> 
         <article>
+          <h3>Marchés locaux</h3>
           <ul>
           {
             Array.isArray(agendaData) && agendaData.map(data => (
@@ -19,9 +20,9 @@ const OuMeTrouver = () => {
                   {data.dates}
                 </span>
                 <a className='meTrouver_details' href={data.mapsLink} target='blank'>
-                  <h3>
+                  <h4>
                     {data.adresse}
-                  </h3>
+                  </h4>
                   <FontAwesomeIcon icon={faMapMarkerAlt} />
                 </a>
               </li>
@@ -30,6 +31,7 @@ const OuMeTrouver = () => {
           </ul>
         </article>
         <aside>
+          <h3>Service à domicile</h3>
           <p>
             Atelier tour à tour vous propose un service à domicile à partir de 40 euros dans les villes mitoyennes de Saint-Médard-en-Jalles.  (Possibilité de se regrouper entre voisin)
           </p>

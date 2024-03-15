@@ -9,19 +9,24 @@ const Hero = () => {
     <article className='hero'>
       <img src={backgroundImg} alt="photo d'affutage en action" />
       <div className='hero_intro'>
-        <h1>Atelier tour a tour -</h1>
-        <h2>affûtage, remoulage et tournage sur bois</h2>
+        <h1>Atelier tour a tour</h1>
+        <h2>affûtage, rémoulage et tournage sur bois</h2>
       </div>
       <div className='hero_background' ></div>
       <div className='hero_gradient'></div>
       <section>
-        <h3>Votre artisan :</h3>
+        <h3>
+          Affûteur rémouleur
+        </h3>
         <p>
-          Diplômé de l’Ecole Nationale d’affûtage et de Rémoulage, votre affûteur rémouleur mobile vous propose un affûtage professionnel directement sur les marchés ou à domicile.
+          Diplomé de l'Ecole Nationale d'Affûtage et de Rémoulage votre artisan vous propose un affûtage professionnel sur les marchés ou directement à domicile.
         </p>
       </section>
       <aside>
-        Atelier tour à tour vous propose aussi des créations d’objets en bois. Ils sont produits au tour à bois avec des bois locaux ou de récupération.
+        <h3>
+          Tournage sur bois
+        </h3>
+          Atelier tour à tour vous propose aussi des creations d'objets en bois. Ils sont produits avec des bois locaux ou avec des chutes récuperées chez des ébenistes du coin.
       </aside>
     </article>
   )
