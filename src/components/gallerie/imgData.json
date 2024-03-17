@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "url": "src/assets/images/gallerie/bijou_01.webp",
+      "category": "bijou"
+    },
+    {
+      "id": 2,
+      "url": "src/assets/images/gallerie/bijou_02.webp",
+      "category": "bijou"
+    },
+    {
+      "id": 3,
+      "url": "src/assets/images/gallerie/bijou_03.webp",
+      "category": "bijou"
+    },
+    {
+      "id": 4,
+      "url": "src/assets/images/gallerie/cendrier_01.webp",
+      "category": "cendrier"
+    },
+    {
+      "id": 5,
+      "url": "src/assets/images/gallerie/cendrier_02.webp",
+      "category": "cendrier"
+    },
+    {
+      "id": 6,
+      "url": "src/assets/images/gallerie/cendrier_03.webp",
+      "category": "cendrier"
+    },
+    {
+      "id": 7,
+      "url": "src/assets/images/gallerie/cendrier_04.webp",
+      "category": "cendrier"
+    },
+    {
+      "id": 8,
+      "url": "src/assets/images/gallerie/cendrier_05.webp",
+      "category": "cendrier"
+    },
+    {
+      "id": 9,
+      "url": "src/assets/images/gallerie/cendrier_06.webp",
+      "category": "cendrier"
+    },
+    {
+      "id": 10,
+      "url": "src/assets/images/gallerie/cendrier_07.webp",
+      "category": "cendrier"
+    },
+    {
+      "id": 11,
+      "url": "src/assets/images/gallerie/stylo_01.webp",
+      "category": "stylo"
+    },
+    {
+      "id": 12,
+      "url": "src/assets/images/gallerie/stylo_02.webp",
+      "category": "stylo"
+    },
+    {
+      "id": 13,
+      "url": "src/assets/images/gallerie/stylo_03.webp",
+      "category": "stylo"
+    },
+    {
+      "id": 14,
+      "url": "src/assets/images/gallerie/toupie_01.webp",
+      "category": "toupie"
+    }
+  ]
+  
