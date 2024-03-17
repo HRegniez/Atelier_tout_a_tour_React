@@ -6,7 +6,7 @@ import './styles.sass'
 const Tarifs = () => {
 
   return (
-    <section className='tarifs'>
+    <section id='tarifs' className='tarifs'>
       <div className='tarifs_contain'>
         <h2>Tarifs </h2>
         <ul className='tarifs_list'>

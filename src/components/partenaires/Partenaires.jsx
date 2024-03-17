@@ -4,7 +4,7 @@ import '../../svg.sass'
 
 const Partenaires = () => {
   return (
-    <section className='partenaires'>
+    <section id='partenaires' className='partenaires'>
       <div className='partenaires_contain'> 
         <h2>Partenaires</h2>
         <div className='partenaires_flex'>

@@ -6,8 +6,8 @@ const Hero = () => {
 
 
   return (
-    <article className='hero'>
-      <img src={backgroundImg} alt="photo d'affutage en action" />
+    <article id="main" className='hero'>
+      <img src={backgroundImg} alt="Rémouleur en action" />
       <div className='hero_intro'>
         <h1>Atelier tour a tour</h1>
         <h2>affûtage, rémoulage et tournage sur bois</h2>

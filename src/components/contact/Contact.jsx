@@ -19,7 +19,9 @@ const Contact = () => {
           </li>
         </div>
         <li>
-          <FontAwesomeIcon className='contact_fb icon' icon={faFacebook} />
+          <a href="https://www.facebook.com/profile.php?id=61556399373405&locale=fr_FR%2F" target='_blanc'>
+            <FontAwesomeIcon className='contact_fb icon' icon={faFacebook} />
+          </a>
         </li>
       </ul>
     </section>

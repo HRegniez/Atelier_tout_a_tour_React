@@ -25,7 +25,7 @@ const images = [
 
 const Gallerie = () => {
   return (
-    <section className='gallerie'>
+    <section id='galerie' className='gallerie'>
       <div className='gallerie_gradient'></div>
       
       <h2>Galerie</h2>
