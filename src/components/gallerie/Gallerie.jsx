@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles.sass'
 import '../../svg.sass'
+import imgData from './imgData.json'
 
 const images = [
   "src/assets/images/gallerie/bijou_01.webp",
@@ -24,6 +25,7 @@ const images = [
 
 
 const Gallerie = () => {
+  console.log(imgData)
   return (
     <section id='galerie' className='gallerie'>
       <div className='gallerie_gradient'></div>
@@ -31,11 +33,14 @@ const Gallerie = () => {
       <h2>Galerie</h2>
       <div className="gallerie_contain">
         {
-          images ?
-            images.map((image, i)=> (
-              <img srcSet={image} key={i}/>
-            ))
-          : null
+          Array.isArray(imgData) && imgData.map(img => (
+            <img src={img.url} alt={img.alt} key={img.id}/>
+          ))
+          // images ?
+          //   images.map((image, i)=> (
+          //     <img srcSet={image} key={i}/>
+          //   ))
+          // : null
         }
       </div>
     </section>

@@ -16,7 +16,7 @@ const Hero = () => {
       <div className='hero_gradient'></div>
       <section>
         <h3>
-          Affûteur rémouleur
+          Affûteur rémouleur mobile
         </h3>
         <p>
           Diplomé de l'Ecole Nationale d'Affûtage et de Rémoulage votre artisan vous propose un affûtage professionnel sur les marchés ou directement à domicile.
