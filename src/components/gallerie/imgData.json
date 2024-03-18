@@ -1,72 +1,72 @@
 [
     {
       "id": 1,
-      "url": "../assets/images/gallerie/bijou_01.webp",
+      "url": "/images/gallerie/bijou_01.webp",
       "alt": "bijou"
     },
     {
       "id": 2,
-      "url": "../assets/images/gallerie/bijou_02.webp",
+      "url": "/images/gallerie/bijou_02.webp",
       "alt": "bijou"
     },
     {
       "id": 3,
-      "url": "../assets/images/gallerie/bijou_03.webp",
+      "url": "/images/gallerie/bijou_03.webp",
       "alt": "bijou"
     },
     {
       "id": 4,
-      "url": "../assets/images/gallerie/cendrier_01.webp",
+      "url": "/images/gallerie/cendrier_01.webp",
       "alt": "cendrier"
     },
     {
       "id": 5,
-      "url": "../assets/images/gallerie/cendrier_02.webp",
+      "url": "/images/gallerie/cendrier_02.webp",
       "alt": "cendrier"
     },
     {
       "id": 6,
-      "url": "../assets/images/gallerie/cendrier_03.webp",
+      "url": "/images/gallerie/cendrier_03.webp",
       "alt": "cendrier"
     },
     {
       "id": 7,
-      "url": "../assets/images/gallerie/cendrier_04.webp",
+      "url": "/images/gallerie/cendrier_04.webp",
       "alt": "cendrier"
     },
     {
       "id": 8,
-      "url": "../assets/images/gallerie/cendrier_05.webp",
+      "url": "/images/gallerie/cendrier_05.webp",
       "alt": "cendrier"
     },
     {
       "id": 9,
-      "url": "../assets/images/gallerie/cendrier_06.webp",
+      "url": "/images/gallerie/cendrier_06.webp",
       "alt": "cendrier"
     },
     {
       "id": 10,
-      "url": "../assets/images/gallerie/cendrier_07.webp",
+      "url": "/images/gallerie/cendrier_07.webp",
       "alt": "cendrier"
     },
     {
       "id": 11,
-      "url": "../assets/images/gallerie/stylo_01.webp",
+      "url": "/images/gallerie/stylo_01.webp",
       "alt": "stylo"
     },
     {
       "id": 12,
-      "url": "../assets/images/gallerie/stylo_02.webp",
+      "url": "/images/gallerie/stylo_02.webp",
       "alt": "stylo"
     },
     {
       "id": 13,
-      "url": "../assets/images/gallerie/stylo_03.webp",
+      "url": "/images/gallerie/stylo_03.webp",
       "alt": "stylo"
     },
     {
       "id": 14,
-      "url": "../assets/images/gallerie/toupie_01.webp",
+      "url": "/images/gallerie/toupie_01.webp",
       "alt": "toupie"
     }
   ]

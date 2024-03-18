@@ -10,7 +10,7 @@ const Partenaires = () => {
         <div className='partenaires_flex'>
           <a href="https://www.instagram.com/labo.fl17" target='_blanc'>
             <div>
-              <img src="src/assets/images/partenaires/Flip17_logo.webp" alt="Flip 17 logo" />
+              <img src="/images/partenaires/Flip17_logo.webp" alt="Flip 17 logo" />
               <h3 className='partenaires_title'>FL17 Lab</h3>
               <h4>Réalisation de tapis en laine sur mesure.</h4>
             </div>
@@ -18,7 +18,7 @@ const Partenaires = () => {
           </a>
           <a href="https://www.instagram.com/gypsytattoomarion" target='_blanc'>
             <div>
-              <img src="src/assets/images/partenaires/Gypsytattoo_logo.svg" alt="Gypsy tattoo logo" />
+              <img src="/images/partenaires/Gypsytattoo_logo.svg" alt="Gypsy tattoo logo" />
               <h3 className='partenaires_title'>Gypsy Tattoo</h3>
               <h4>Tatoueuse</h4>
             </div>
