@@ -12,22 +12,25 @@ const Hero = () => {
         <h1>Atelier tour a tour</h1>
         <h2>affûtage, rémoulage et tournage sur bois</h2>
       </div>
+      <div className='hero_details'>
+        <section>
+          <h3>
+            Affûteur rémouleur mobile
+          </h3>
+          <p>
+            Diplomé de l'Ecole Nationale d'Affûtage et de Rémoulage votre artisan vous propose un affûtage professionnel sur les marchés ou directement à domicile.
+          </p>
+        </section>
+        <aside>
+          <h3>
+            Tournage sur bois
+          </h3>
+            Atelier tour à tour vous propose aussi des creations d'objets en bois. Ils sont produits avec des bois locaux ou avec des chutes récuperées chez des ébenistes du coin.
+        </aside>  
+      </div>
+      
       <div className='hero_background' ></div>
       <div className='hero_gradient'></div>
-      <section>
-        <h3>
-          Affûteur rémouleur mobile
-        </h3>
-        <p>
-          Diplomé de l'Ecole Nationale d'Affûtage et de Rémoulage votre artisan vous propose un affûtage professionnel sur les marchés ou directement à domicile.
-        </p>
-      </section>
-      <aside>
-        <h3>
-          Tournage sur bois
-        </h3>
-          Atelier tour à tour vous propose aussi des creations d'objets en bois. Ils sont produits avec des bois locaux ou avec des chutes récuperées chez des ébenistes du coin.
-      </aside>
     </article>
   )
 }
