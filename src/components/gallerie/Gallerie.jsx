@@ -1,42 +1,22 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import './styles.sass'
 import '../../svg.sass'
 import imgData from './imgData.json'
 
-// const images = [
-//   "src/assets/images/gallerie/bijou_01.webp",
-//   "src/assets/images/gallerie/bijou_02.webp",
-//   "src/assets/images/gallerie/bijou_03.webp",
-
-//   "src/assets/images/gallerie/cendrier_01.webp",
-//   "src/assets/images/gallerie/cendrier_02.webp",
-//   "src/assets/images/gallerie/cendrier_03.webp",
-//   "src/assets/images/gallerie/cendrier_04.webp",
-//   "src/assets/images/gallerie/cendrier_05.webp",
-//   "src/assets/images/gallerie/cendrier_06.webp",
-//   "src/assets/images/gallerie/cendrier_07.webp",
-  
-//   "src/assets/images/gallerie/stylo_01.webp",
-//   "src/assets/images/gallerie/stylo_02.webp",
-//   "src/assets/images/gallerie/stylo_03.webp",
-
-//   "src/assets/images/gallerie/toupie_01.webp"
-// ]
-
+// Lazy load the image component
+const LazyImage = lazy(() => import('../lazyImg/LazyImg'))
 
 const Gallerie = () => {
-
   return (
     <section id='galerie' className='gallerie'>
       <div className='gallerie_gradient'></div>
-      
       <h2>Galerie</h2>
       <div className="gallerie_contain">
-        {
-          Array.isArray(imgData) && imgData.map(img => (
-            <img src={img.url} alt={img.alt} key={img.id}/>
-          ))
-        }
+        <Suspense fallback={<div>Loading...</div>}>
+          {Array.isArray(imgData) && imgData.map(img => (
+            <LazyImage url={img.url} alt={img.alt} key={img.id} />
+          ))}
+        </Suspense>
       </div>
     </section>
   )
