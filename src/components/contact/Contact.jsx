@@ -11,18 +11,24 @@ const Contact = () => {
       <h3>Contact</h3>
       <div className='contact_contain'>
         <ul >
-          <li><FontAwesomeIcon className='contact_icon icon' icon={faPhone} /> 07 75 75 10 88</li>
+          <li><FontAwesomeIcon className='contact_icon icon' icon={faPhone} /> 
+            07 75 75 10 88
+          </li>
           <li>
-            <a className='contact_mail' href="mailto:ateliertouratour@gmail.com">
-              <FontAwesomeIcon className='contact_icon icon' icon={faEnvelope} /> ateliertouratour@gmail.com
+            <a className='contact_link' href="mailto:ateliertouratour@gmail.com">
+              <FontAwesomeIcon className='contact_icon icon' icon={faEnvelope} /> 
+              ateliertouratour@gmail.com
+            </a>
+          </li>
+          <li>
+            <a className='contact_link' href="https://www.facebook.com/profile.php?id=61556399373405&locale=fr_FR%2F" target='_blanc'>
+              <FontAwesomeIcon className='contact_icon icon' icon={faFacebook} />
+              Facebook
             </a>
           </li>
         </ul>
         <div>
-          <a href="https://www.facebook.com/profile.php?id=61556399373405&locale=fr_FR%2F" target='_blanc'>
-            <FontAwesomeIcon className='contact_fb icon' icon={faFacebook} />
-            <span>facebook</span>
-          </a>
+          
         </div>
       </div>
     </section>

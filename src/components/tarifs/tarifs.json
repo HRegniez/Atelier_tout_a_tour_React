@@ -34,6 +34,10 @@
             {
                 "name": "Feuille (hachoir)",
                 "price": "8,50 €"
+            },
+            {
+              "name": "Rattrapage pointe couteau",
+              "price": "3,30 €"
             }
         ]
     },
@@ -50,16 +54,8 @@
                 "price": "8,00 €"
               },
               {
-                "name": "Fer de raboteuse dégauchisseuse jusqu’a 20mm",
+                "name": "Fer de raboteuse dégauchisseuse jusqu’a 20cm",
                 "price": "8,00 €"
-              },
-              {
-                "name": "Ciseau droit de coiffure/toilettage",
-                "price": "20,00 €"
-              },
-              {
-                "name": "Ciseau japonnais de coiffure/toilettage",
-                "price": "30,00 €"
               },
               {
                 "name": "Serpette",
@@ -72,10 +68,6 @@
               {
                 "name": "Lame scie circulaire",
                 "price": "0,40 €/dent"
-              },
-              {
-                "name": "Rattrapage pointe couteau",
-                "price": "3,30 €"
               }
         ]
     },
@@ -124,6 +116,14 @@
             {
               "name": "Ciseau de couture",
               "price": "9,00 €"
+            },
+            {
+              "name": "Ciseau de coiffure/toilettage",
+              "price": "20,00 €"
+            },
+            {
+              "name": "Ciseau japonnais de coiffure/toilettage",
+              "price": "30,00 €"
             }
         ]
     }

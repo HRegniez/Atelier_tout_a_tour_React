@@ -53,7 +53,7 @@ const Header = () => {
       </div>
       <ul className={`header_nav ${toggleMenu ? "show" : null}`}>
         <li><a href="#main">Accueil</a></li>
-        <li><a href="#meTrouver">Ou me trouver</a></li>
+        <li><a href="#meTrouver">Où me trouver</a></li>
         <li><a href="#tarifs">Tarifs</a></li>
         <li><a href="#galerie">Galerie</a></li>
         <li><a href="#partenaires">Partenaires</a></li>

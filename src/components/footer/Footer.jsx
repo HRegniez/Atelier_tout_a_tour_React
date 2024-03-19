@@ -12,7 +12,7 @@ const Footer = () => {
           <img src={logo} alt="TAT logo" />
         </div>
         <aside>
-          <p>this site was hand coded by HRegniez</p>
+          <p>Site codé par <a href="https://www.hregniez.com">HRegniez</a> . </p>
         </aside>
       </article>
     </section>

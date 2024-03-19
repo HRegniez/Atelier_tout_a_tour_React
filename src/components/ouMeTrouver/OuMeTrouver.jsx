@@ -6,7 +6,7 @@ import MarchesLocaux from '../marchesLocaux/MarchesLocaux'
 const OuMeTrouver = () => {
   return (
     <section id='meTrouver' className='meTrouver'>
-      <h2>Ou me trouver</h2>
+      <h2>Où me trouver</h2>
       <div className='meTrouver_contain'> 
         <MarchesLocaux/>
         <aside>

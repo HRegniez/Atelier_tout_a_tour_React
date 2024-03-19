@@ -9,7 +9,7 @@ const Hero = () => {
     <article id="main" className='hero'>
       <img src={backgroundImg} alt="Rémouleur en action" />
       <div className='hero_intro'>
-        <h1>Atelier tour a tour</h1>
+        <h1>Atelier tour <span>à</span> tour</h1>
         <h2>affûtage, rémoulage et tournage sur bois</h2>
       </div>
       <div className='hero_details'>

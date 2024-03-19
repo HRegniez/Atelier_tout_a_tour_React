@@ -3,7 +3,6 @@ import './styles.sass'
 import '../../svg.sass'
 import imgData from './imgData.json'
 
-// Lazy load the image component
 const LazyImage = lazy(() => import('../lazyImg/LazyImg'))
 
 const Gallerie = () => {

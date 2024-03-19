@@ -1,14 +1,14 @@
 import React from 'react'
-import agendaData from './agenda.json'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
+// import agendaData from './agenda.json'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
 
 const MarchesLocaux = () => {
   return (
     <article>
-      <h3>Marchés locaux</h3>
       <ul>
-      {
+        <li className='aVenir'>Lieux et dates à venir...</li>
+      {/* {
         Array.isArray(agendaData) && agendaData.map(data => (
           <li key={data.id}>
             <span>
@@ -22,7 +22,7 @@ const MarchesLocaux = () => {
             </a>
           </li>
         ))
-      }
+      } */}
       </ul>
     </article>
   )
