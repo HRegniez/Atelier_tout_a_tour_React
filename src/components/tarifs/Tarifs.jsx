@@ -9,7 +9,7 @@ const Tarifs = () => {
     <section id='tarifs' className='tarifs'>
       <div className='tarifs_contain'>
         <h2>Tarifs </h2>
-        <ul className='tarifs_list'>
+        <div className='tarifs_list'>
           {
           tarifs.map(tarif => (
             <Prices key={tarif.id} tarif={tarif}/>
@@ -20,7 +20,7 @@ const Tarifs = () => {
           <p>Prix indicatif selon état / tarifs dégressifs selon quantité.<br/>
           Pour tous autres types d’outil merci de me contacter.</p>
         </aside>
-        </ul>
+        </div>
       </div>
     </section>
   )
