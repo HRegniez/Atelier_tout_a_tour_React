@@ -52,11 +52,11 @@ const Header = () => {
         <div className='burger_line line_3'></div>
       </div>
       <ul className={`header_nav ${toggleMenu ? "show" : null}`}>
-        <li><a href="#main">Accueil</a></li>
-        <li><a href="#meTrouver">Où me trouver</a></li>
-        <li><a href="#tarifs">Tarifs</a></li>
-        <li><a href="#galerie">Galerie</a></li>
-        <li><a href="#partenaires">Partenaires</a></li>
+        <li><a onClick={handleMenuToggle} href="#main">Accueil</a></li>
+        <li><a onClick={handleMenuToggle} href="#meTrouver">Où me trouver</a></li>
+        <li><a onClick={handleMenuToggle} href="#tarifs">Tarifs</a></li>
+        <li><a onClick={handleMenuToggle} href="#galerie">Galerie</a></li>
+        <li><a onClick={handleMenuToggle} href="#partenaires">Partenaires</a></li>
       </ul>
     </nav>
   )
