@@ -21,4 +21,4 @@ const categoryPriceSchema = new mongoose.Schema({
 
 
 
-module.exports = mongoose.model('TarifsSchema', categoryPriceSchema)
+module.exports = mongoose.model('Tarifs', categoryPriceSchema)

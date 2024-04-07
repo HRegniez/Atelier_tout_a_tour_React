@@ -7,4 +7,4 @@ const agendaDateSchema = mongoose.Schema({
     mapsLink: {type: String, required: false}
 })
 
-module.exports = mongoose.model('AgendaDatesSchema', agendaDateSchema)
+module.exports = mongoose.model('Agenda', agendaDateSchema)

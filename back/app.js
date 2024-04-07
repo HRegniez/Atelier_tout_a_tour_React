@@ -2,7 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 require('dotenv').config()
 
-const AgendaDate = require('./models/AgendaDate')
+const agendaRoutes = require('./routes/agenda')
 
 const app = express()
 
@@ -30,15 +30,18 @@ app.use((req, res, next) => {
     next()
 })
 
+app.use('/api/agenda', agendaRoutes)
+
 app.post('/api/agenda', (req, res, next) => {
   delete req.body._id
-  const agendaDate = new AgendaDate({
+  const agendaDate = new Agenda({
     ...req.body
   })
   agendaDate.save()
     .then(() => res.status(201).json({ message: 'Objet ajouté !' }))
     .catch(error => res.status(400).json({ error }))
 })
+
 
 app.get('/api/stuff', (req, res, next) => {
     const stuff = [
