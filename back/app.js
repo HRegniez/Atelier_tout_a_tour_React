@@ -2,6 +2,8 @@ const express = require('express')
 const mongoose = require('mongoose')
 require('dotenv').config()
 
+const AgendaDate = require('./models/AgendaDate')
+
 const app = express()
 
 const uri = process.env.MONGO_URI
@@ -18,7 +20,6 @@ async function connectToMongoDB() {
 
 connectToMongoDB()
 
-// Rest of your Express app code
 
 app.use(express.json())
 
@@ -29,11 +30,14 @@ app.use((req, res, next) => {
     next()
 })
 
-app.post('/api/stuff', (req, res, next) => {
-    console.log(req.body)
-    res.status(201).json({
-      message: 'Objet créé !'
-    })
+app.post('/api/agenda', (req, res, next) => {
+  delete req.body._id
+  const agendaDate = new AgendaDate({
+    ...req.body
+  })
+  agendaDate.save()
+    .then(() => res.status(201).json({ message: 'Objet ajouté !' }))
+    .catch(error => res.status(400).json({ error }))
 })
 
 app.get('/api/stuff', (req, res, next) => {
