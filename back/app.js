@@ -1,13 +1,24 @@
 const express = require('express')
 const mongoose = require('mongoose')
+require('dotenv').config()
 
 const app = express()
 
-mongoose.connect('mongodb+srv://jimbob:<PASSWORD>@cluster0-pme76.mongodb.net/test?retryWrites=true&w=majority',
-  { useNewUrlParser: true,
-    useUnifiedTopology: true })
-  .then(() => console.log('Connexion à MongoDB réussie !'))
-  .catch(() => console.log('Connexion à MongoDB échouée !'));
+const uri = process.env.MONGO_URI
+const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } }
+
+async function connectToMongoDB() {
+  try {
+    await mongoose.connect(uri, clientOptions)
+    console.log("Connected to MongoDB successfully!")
+  } catch (error) {
+    console.error("Failed to connect to MongoDB:", error)
+  }
+}
+
+connectToMongoDB()
+
+// Rest of your Express app code
 
 app.use(express.json())
 
@@ -19,11 +30,11 @@ app.use((req, res, next) => {
 })
 
 app.post('/api/stuff', (req, res, next) => {
-    console.log(req.body);
+    console.log(req.body)
     res.status(201).json({
       message: 'Objet créé !'
-    });
-});
+    })
+})
 
 app.get('/api/stuff', (req, res, next) => {
     const stuff = [
@@ -46,6 +57,5 @@ app.get('/api/stuff', (req, res, next) => {
     ]
     res.status(200).json(stuff)
 })
-
 
 module.exports = app
