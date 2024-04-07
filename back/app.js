@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 require('dotenv').config()
 
 const agendaRoutes = require('./routes/agenda')
+const partenairesRoutes = require('./routes/partenaires')
 
 const app = express()
 
@@ -31,6 +32,7 @@ app.use((req, res, next) => {
 })
 
 app.use('/api/agenda', agendaRoutes)
+app.use('/api/partenaires', partenairesRoutes)
 
 app.post('/api/agenda', (req, res, next) => {
   delete req.body._id

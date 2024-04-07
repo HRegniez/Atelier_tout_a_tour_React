@@ -1,14 +1,31 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 // import agendaData from './agenda.json'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
 
 const MarchesLocaux = () => {
+  const [agendaData, setAgendaData] = useState([])
+
+  useEffect(() =>{
+    fetch('http://localhost:3000/api/agenda')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("error - reponse not ok")
+        }
+        return response.json()
+      })
+      .then(data => {
+        setAgendaData(data)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }, [])
   return (
     <article>
       <ul>
-        <li className='aVenir'>Lieux et dates à venir...</li>
-      {/* {
+        {/* <li className='aVenir'>Lieux et dates à venir...</li> */}
+      {
         Array.isArray(agendaData) && agendaData.map(data => (
           <li key={data.id}>
             <span>
@@ -22,7 +39,7 @@ const MarchesLocaux = () => {
             </a>
           </li>
         ))
-      } */}
+      }
       </ul>
     </article>
   )
