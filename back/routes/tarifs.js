@@ -1,35 +1,14 @@
 const express = require('express')
 const router = express.router()
 
-const Tarif = require('../models/Tarif')
+const tarifsCtrl = require('../controllers/tarifs')
 
 // PUT request
 
-router.put('/', (req, res, next) => {
-    const newTarif = req.body
-
-    Tarif.deleteMany({})
-        .then(() => {
-            return Tarif.insertMany(newTarif)
-        })
-        .then(() => {
-            res.status(200).json('tarifs updated !')
-        })
-        .catch(error => {
-            res.status(500).json(error)
-        })
-})
+router.put('/', tarifsCtrl.putTarifs)
 
 // GET request
 
-router.get('/', (req, res, next) => {
-    Tarif.find()
-        .then((tarifData) => {
-            res.status(200).json(tarifData)
-        })
-        .catch(error => {
-            res.status(400).json(error)
-        })
-})
+router.get('/', tarifsCtrl.getTarifs )
 
 module.exports = router
