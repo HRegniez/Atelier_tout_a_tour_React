@@ -4,6 +4,7 @@ require('dotenv').config()
 
 const agendaRoutes = require('./routes/agenda')
 const partenairesRoutes = require('./routes/partenaires')
+const tarifsRoutes = require('./routes/tarifs')
 
 const app = express()
 
@@ -33,6 +34,7 @@ app.use((req, res, next) => {
 
 app.use('/api/agenda', agendaRoutes)
 app.use('/api/partenaires', partenairesRoutes)
+app.use('/api/tarifs', tarifsRoutes)
 
 app.post('/api/agenda', (req, res, next) => {
   delete req.body._id

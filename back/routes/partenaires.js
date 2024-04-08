@@ -3,6 +3,23 @@ const router = express.Router()
 
 const Partenaire = require('../models/Partenaire')
 
+// PUT request
+
+router.put('/', (req, res, next) => {
+    const newPartenaires = req.body
+
+    Partenaire.deleteMany({})
+        .then(() => {
+            return Partenaire.insertMany(newPartenaires)
+        })
+        .then(() => {
+            res.status(200).json('partenaires updated !')
+        })
+        .catch(error => {
+            res.status(500).json(error)
+        })
+})
+
 // GET partenaire
 router.get('/', (req, res, next) => {
     Partenaire.find()

@@ -21,6 +21,7 @@ router.put('/', (req, res, next) => {
         })
   })
 
+// get request
 router.get('/', (req, res , next) => {
     Agenda.find()
         .then(agendaData => res.status(200).json(agendaData))
