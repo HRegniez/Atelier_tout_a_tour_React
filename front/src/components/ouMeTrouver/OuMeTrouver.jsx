@@ -8,7 +8,7 @@ const OuMeTrouver = () => {
   return (
     <section id='meTrouver' className='meTrouver'>
       <h2>Où me trouver</h2>
-      <EditBtn type="agenda"/>
+      
       <div className='meTrouver_contain'> 
         <MarchesLocaux/>
         <aside>

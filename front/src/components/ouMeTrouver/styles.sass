@@ -30,8 +30,6 @@
                 padding: 0.7rem 1rem
                 border-radius: 0.5rem
                 @include shade-out_2
-                display: flex
-                justify-content: space-between 
             .aVenir
                 text-align: center
                 padding: 4rem       
@@ -52,6 +50,7 @@
         font-size: 1.2rem
         text-decoration: none
         transition: all 0.2s ease
+
         h4
             color: black
             font-size: 1rem
@@ -62,6 +61,11 @@
             h4
                 color: $color-sec_dark_01
                 transition: all 0.3s ease
+    &_flex
+        display: flex
+        justify-content: space-between
+    &_dates
+        margin-top: 1rem
             
 @media screen and (max-width: 951px)
      .meTrouver
